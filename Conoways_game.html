@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conoway's Game Of Life</title>
+        <link rel="stylesheet" type="text/css" href="ConowaysStyle.css" />
+        
+    </head>
+    <body>
+        <header>Conoway's Game Of Life</header>
+        <div class="game_window">
+           
+            <div class="game_instructions">
+                <p>Conway's Game of Life is a game invented by mathematician John Conway in 1970.</p>
+                <br>
+                <p>Instructions:</p>
+                <p>Please click on the cells you want to populate, then click "Start" button and the animation will begin.</p>
+                <p>Press "Stop" in order to stop the animation.</p>
+                <p>Press "Clear" to clear the view.</p>
+
+                <div class="start_button">
+                    <button onclick="conowaysGame()">Start</button>
+                    <button onclick="stopGame()">Stop</button>
+                    <button onclick="clearTable()">Clear</button>
+                </div>
+            </div>
+                <div id="tableWrap"></div>
+        </div>
+        
+        <script src="ConowaysFunctionallity.js"></script>
+    </body>
+</html>
