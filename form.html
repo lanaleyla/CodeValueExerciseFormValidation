@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple form</title>
+        <link rel="stylesheet" type="text/css" href="MyStyleForm.css" />
+    </head>
+   
+    <body>
+        <header>Simple Form</header>
+
+        <form  class="MyForm" onsubmit="MyValidate()" method="get">
+        <div class="div_form">
+            <div class="labels">    
+                <label for="FullName">Full Name: </label>
+                <label for="Address">Address: </label>
+            </div>  
+
+            <div class="inputs">
+                <input id="FullName" type="text" placeholder="Enter your Name here..." required/> 
+                <input id="Address" type="text" placeholder="Enter your Address here..." required/>
+            </div>
+        </div>
+        <div class="submit_button">
+            <input  id="btnSubmit" value="Submit" type="submit"/>
+        </div>
+        </form>
+
+    <script src="form_validator.js" ></script>
+    </body>
+</html>
